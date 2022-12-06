@@ -1,0 +1,18 @@
+type Query {
+  history: [Message!]!
+}
+
+type Message {
+  sender: String!
+  color: String!
+  message: String!
+  timestamp: String!
+}
+
+type Mutation {
+  reply(sender: String!, message: String!): Boolean!
+}
+
+type Subscription {
+  message: Message
+}

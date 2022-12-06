@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  height: 100%;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form {
+  max-width: 200px;
+}
+
+.login-form label {
+  font-weight: bold;
+}
+
+.login-form input,
+.login-form button {
+  clear: both;
+  width: 100%;
+  margin-top: 12px;
+  padding: 6px 8px;
+}
+
+.chat-screen {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  width: 100%;
+  padding: 8px;
+}
+
+.chat-messages,
+.chat-reply {
+  padding: 8px;
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.chat-message {
+  margin-top: 12px;
+}
+
+.chat-message-header {
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+
+.chat-message-header span {
+  margin-left: 8px;
+  opacity: 0.5;
+}
+
+.chat-reply input {
+  width: 100%;
+  padding: 6px 8px;
+  font-size: 24px;
+}
