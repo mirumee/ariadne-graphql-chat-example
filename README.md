@@ -19,9 +19,7 @@ Example client was implemented with:
 - GraphQL-WS 5.11: GraphQL WebSockets protocol
 
 
-## Demo
-
-Chat in action:
+## Chat in action
 
 ![Demo](https://user-images.githubusercontent.com/750553/205963257-39d062a8-34d5-4f65-b8a5-608aee5c2a46.gif)
 
