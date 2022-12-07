@@ -67,7 +67,7 @@ npm run start
 
 Open a web browser of your liking and navigate to http://localhost:3000/ start chatting. Every browser tab will be separate chat session, so you can open as many as you like to experiment with multiple users.
 
-> **Note:** sometimes client's devserver acts funky about proxying websockets and there's a delay between dev server starting and accepting websocket connections. This results in `upgrade: websocket` requests stalling in the browser. Refresh usually resolves those issues.
+> **Note:** sometimes `http-proxy-middleware` used by the dev server to proxy requests to the GraphQL acts funky about proxying websockets and there's a delay between dev server starting and accepting websocket connections. This results in `upgrade: websocket` requests for `/graphql` stalling in the browser. This issue usually resolves itself after refresh or few.
 
 
 ## Contributing
