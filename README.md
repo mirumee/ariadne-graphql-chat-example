@@ -35,7 +35,7 @@ git clone git@github.com:mirumee/ariadne-graphql-chat-example.git
 In cloned directory build Python chat and Redis services using Docker Compose:
 
 ```
-docker-compose build
+docker compose build
 ```
 
 Move to `react-client` directory and install client's dependencies:
@@ -50,7 +50,7 @@ npm install
 Run following command in cloned directory to start Docker Compose services:
 
 ```
-docker-compose up
+docker compose up
 ```
 
 If you get an error about bind for 0.0.0.0:8000 failing, check if there's nothing else running on port 8000.
