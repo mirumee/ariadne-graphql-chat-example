@@ -14,12 +14,12 @@ import "./index.css";
 import App from "./App";
 
 const httpLink = new HttpLink({
-  uri: `http://${window.location.hostname}:3000/graphql/`,
+  uri: `http://${window.location.hostname}:5173/graphql/`,
 });
 
 const wsLink = new GraphQLWsLink(
   createClient({
-    url: `ws://${window.location.hostname}:3000/graphql/`,
+    url: `ws://${window.location.hostname}:5173/graphql/`,
   })
 );
 
