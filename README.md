@@ -16,7 +16,7 @@ Example client was implemented with:
 - create-react-app: Project setup and dev tools
 - React 18: UI library
 - Apollo-Client 3.7: GraphQL client
-- GraphQL-WS 5.11: GraphQL WebSockets protocol
+- GraphQL-WS 5.12: GraphQL WebSockets protocol
 
 
 ## Chat in action
@@ -35,7 +35,7 @@ git clone git@github.com:mirumee/ariadne-graphql-chat-example.git
 In cloned directory build Python chat and Redis services using Docker Compose:
 
 ```
-docker-compose build
+docker compose build
 ```
 
 Move to `react-client` directory and install client's dependencies:
@@ -50,7 +50,7 @@ npm install
 Run following command in cloned directory to start Docker Compose services:
 
 ```
-docker-compose up
+docker compose up
 ```
 
 If you get an error about bind for 0.0.0.0:8000 failing, check if there's nothing else running on port 8000.
@@ -60,12 +60,10 @@ GraphQL explorer can be found under the http://localhost:8000/graphql/ address.
 To start client, move to `react-client` directory and run following:
 
 ```
-npm run start
+npm run dev
 ```
 
-Open a web browser of your liking and navigate to http://localhost:3000/ start chatting. Every browser tab will be separate chat session, so you can open as many as you like to experiment with multiple users.
-
-> **Note:** sometimes `http-proxy-middleware` used by the dev server to proxy requests to the GraphQL acts funky about proxying websockets and there's a delay between dev server starting and accepting websocket connections. This results in `upgrade: websocket` requests for `/graphql` stalling in the browser. This issue usually resolves itself after refresh or few.
+Open a web browser of your liking and navigate to http://localhost:5173/ start chatting. Every browser tab will be separate chat session, so you can open as many as you like to experiment with multiple users.
 
 
 ## Contributing
